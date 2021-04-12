@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="4dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3Test">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+
+        android:layout_marginBottom="25dp"
+
+        app:lottie_autoPlay="true"
+
+
+        app:lottie_loop="true"
+
+
+        app:lottie_rawRes="@raw/spacemann"></com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/textviewtesttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="TestText"
+        android:textSize="32dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+
+                android:id="@+id/buttontest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btntestbackground"
+                android:fontFamily="@font/raleway"
+                android:text="test1"
+                android:textSize="12dp"></Button>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/buttontest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btntestbackground"
+                android:fontFamily="@font/raleway"
+                android:text="test2"></Button>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/buttontest3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btntestbackground"
+                android:fontFamily="@font/raleway"
+                android:text="test1"></Button>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/buttontest4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btntestbackground"
+                android:fontFamily="@font/raleway"
+                android:text="test2"></Button>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
