@@ -43,5 +43,7 @@ dependencies {
 
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
 
-    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.airbnb.android:lottie:3.6.1'
+
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
 }

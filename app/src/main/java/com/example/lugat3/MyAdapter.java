@@ -38,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Game game = gameArrayList.get(position);
         holder.textView.setText(game.getUzbek());
         holder.textView2.setText(game.getEglish());
+        holder.textView3.setText(game.getRuski());
         YoYo.with(Techniques.ZoomIn)
                 .duration(300)
                 .repeat(0)

@@ -4,6 +4,7 @@ import com.orm.SugarApp;
 import com.orm.SugarContext;
 
 public class Sugar extends SugarApp {
+
     @Override
     public void onCreate() {
         super.onCreate();

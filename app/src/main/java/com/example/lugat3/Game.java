@@ -1,17 +1,21 @@
 package com.example.lugat3;
 
-public class Game {
+import com.orm.SugarRecord;
+
+public class Game extends SugarRecord {
+
     String uzbek;
     String eglish;
-    String rus;
+    String ruski;
 
     public Game() {
     }
 
-    public Game(String uzbek, String eglish, String rus) {
+    public Game(String uzbek, String eglish, String ruski) {
         this.uzbek = uzbek;
         this.eglish = eglish;
-        this.rus = rus;
+        this.ruski = ruski;
+
     }
 
     public String getUzbek() {
@@ -30,11 +34,11 @@ public class Game {
         this.eglish = eglish;
     }
 
-    public String getRus() {
-        return rus;
+    public String getRuski() {
+        return ruski;
     }
 
-    public void setRus(String rus) {
-        this.rus = rus;
+    public void setRuski(String ruski) {
+        this.ruski = ruski;
     }
 }
