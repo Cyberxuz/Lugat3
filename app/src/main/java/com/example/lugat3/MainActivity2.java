@@ -45,6 +45,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     EditText editTextsearch;
 
+    EditText editText1;
     Game game;
 
     Game farqiYoqforadddatabase;
