@@ -36,7 +36,7 @@ import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 
 public class MainActivity2 extends AppCompatActivity {
 
-    FloatingActionButton floatingActionButton;
+    FloatingActionButton floatingActionButton, floatingActionButton1;
 
     RecyclerView recyclerView;
     MyAdapter myAdapter;
@@ -62,6 +62,8 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         floatingActionButton = findViewById(R.id.buttonaction);
+        floatingActionButton1=findViewById(R.id.buttonbaza);
+
         recyclerView = findViewById(R.id.recyclerview);
 
         editTextsearch = findViewById(R.id.edittextsearch);
@@ -92,6 +94,13 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity2.this,MainActivity3.class));
+            }
+        });
+
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,31 +116,7 @@ public class MainActivity2 extends AppCompatActivity {
                 EditText editTextrus = view.findViewById(R.id.edittextrus);
                 Button button=view.findViewById(R.id.buttonadd);
 
-                imageView2=findViewById(R.id.buttonactivity3);
 
-                imageView2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(MainActivity2.this, Baza.class));
-                    }
-                });
-
-//                button.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//                    Game game = new Game();
-//
-//                    game.setUzbek(editTextuzb.getText().toString());
-//                    game.setEglish(editTexteng.getText().toString());
-//                    game.setRuski(editTextrus.getText().toString());
-//                    game.save();
-////
-//                    readfromdatabase();
-//
-//                    Toast.makeText(com.example.lugat3.MainActivity2.this, "Added", Toast.LENGTH_SHORT).show();
-//                    readfromdatabase();
-//                    dialog.cancel();
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -142,9 +127,9 @@ public class MainActivity2 extends AppCompatActivity {
                         game.setRuski(editTextrus.getText().toString());
                         game.save();
 
-                        readfromdatabase();
+                        readfromdatabaseb();
                         Toast.makeText(MainActivity2.this, "Added", Toast.LENGTH_SHORT).show();
-                        readfromdatabase();
+                        readfromdatabaseb();
                         dialog.cancel();
 
                     }
@@ -153,7 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
 
                 dialog.create();
                 dialog.show();
-                readfromdatabase();
+                readfromdatabaseb();
 
 
 
@@ -161,7 +146,7 @@ public class MainActivity2 extends AppCompatActivity {
 //
             }
         });
-        readfromdatabase();
+        readfromdatabaseb();
 
         if (games.size()==0){
             //buyerdan boshlab...........
@@ -728,7 +713,7 @@ public class MainActivity2 extends AppCompatActivity {
 //            game.save();
 
 
-            readfromdatabase();
+            readfromdatabaseb();
         }
 
 
@@ -736,7 +721,7 @@ public class MainActivity2 extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
     }
 
-    public void readfromdatabase() {
+    public void readfromdatabaseb() {
 
         games = Game.listAll(Game.class);
         recyclerView.setHasFixedSize(true);
@@ -786,7 +771,7 @@ public class MainActivity2 extends AppCompatActivity {
                             //  Toast.makeText(MainActivity2.this, farqiYoqs.get(direction).getId().toString(), Toast.LENGTH_SHORT).show();
 
 
-                            readfromdatabase();
+                            readfromdatabaseb();
                         }
                     },1500);
 //                  myAdapter.notifyDataSetChanged();

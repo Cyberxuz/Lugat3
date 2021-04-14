@@ -24,14 +24,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="15dp"
         android:src="@drawable/ic_round_equalizer_24"></ImageView>
-    <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_width="25dp"
-        android:id="@+id/buttonactivity3"
-        android:layout_height="25dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="55dp"
-        android:src="@drawable/ic_baseline_archive_24"></ImageView>
+
 
     <EditText
         android:fontFamily="@font/raleway"
@@ -68,6 +61,28 @@
         android:background="@color/teal_200"
         android:layout_margin="10dp"
         android:id="@+id/buttonaction"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_archive_24"
+
+        android:layout_alignParentBottom="true"
+        app:fabSize="normal"
+        app:tint="@color/white"
+        android:backgroundTint="@color/teal_200"
+        android:background="@color/teal_200"
+        android:layout_margin="10dp"
+        android:id="@+id/buttonbaza"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+<!--    <Button-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:id="@+id/buttonactivity3"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="baza"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="55dp"-->
+<!--        ></Button>-->
 
 
 </RelativeLayout>
