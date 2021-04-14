@@ -243,6 +243,7 @@ public class MainActivity3Test extends AppCompatActivity {
             button3.setText(gameList.get(2).getUzbek());
             button4.setText(gameList.get(3).getUzbek());
             textView.setText(gameList.get(a).getEglish());
+
         }
     }
 }

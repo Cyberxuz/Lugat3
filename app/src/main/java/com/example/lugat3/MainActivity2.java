@@ -156,16 +156,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         if (games.size()==0){
             //buyerdan boshlab...........
-//            game = new Game();
-//            game.setEglish("Latitude");
-//            game.setUzbek("Kenglik");
-//            game.setRuski("Rustili");
-//            game.save();
+            game = new Game();
+            game.setEglish("Latitude");
+            game.setUzbek("Kenglik");
+            game.setRuski("Rustili");
+            game.save();
 //            //endgame...............
-//            game = new Game();
-//            game.setEglish("Mariner");
-//            game.setUzbek("Dengizchi");
-//            game.save();
+            game = new Game();
+            game.setEglish("Mariner");
+            game.setUzbek("Dengizchi");
+            game.setRuski("Rus");
+            game.save();
 //            game = new Game();
 //            game.setEglish("Multitude");
 //            game.setUzbek("Juda ko`p");
