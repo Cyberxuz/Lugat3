@@ -49,7 +49,7 @@ public class MainActivity2 extends AppCompatActivity {
     Game game;
 
     Game farqiYoqforadddatabase;
-    ImageView imageView;
+    ImageView imageView, imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +106,15 @@ public class MainActivity2 extends AppCompatActivity {
                 EditText editTexteng = view.findViewById(R.id.edittexteng);
                 EditText editTextrus = view.findViewById(R.id.edittextrus);
                 Button button=view.findViewById(R.id.buttonadd);
+
+                imageView2=findViewById(R.id.buttonactivity3);
+
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(MainActivity2.this, Baza.class));
+                    }
+                });
 
 //                button.setOnClickListener(new View.OnClickListener() {
 //                    @Override

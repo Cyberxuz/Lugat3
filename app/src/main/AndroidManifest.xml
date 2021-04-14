@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lugat3">
-        <activity android:name=".MainActivity3Test"></activity>
+        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".MainActivity3Test" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,7 +23,7 @@
 
         <meta-data
             android:name="DATABASE"
-            android:value="cyberxuz.db"></meta-data>
+            android:value="cyberxuz.db" />
         <meta-data
             android:name="VERSION"
             android:value="1" />
